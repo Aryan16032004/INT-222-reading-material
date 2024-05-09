@@ -1,0 +1,18 @@
+// writing in a file 
+
+const fs = require('fs');
+
+// Data to be written to the file
+const data = 'Hello, world! This is a new file.';
+
+// File path for the new text file
+const filePath = 'newfile.txt';
+
+// Write data to the new file
+fs.writeFile(filePath, data, (err) => {
+    if (err) {
+        console.error('Error writing to file:', err);
+        return;
+    }
+    console.log('Data written to file successfully.');
+});
