@@ -19,7 +19,7 @@ app.post('/set-student', (req, res) => {
 app.get('/show-student', (req, res) => {
   res.json(req.cookies.student ? JSON.parse(req.cookies.student) : {});
 });
-
+99
 app.get('/reset-student', (req, res) => {
   res.clearCookie('student');
   res.send('Student information cleared!');
